@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export default function SenmurvLaunch() {
@@ -17,8 +18,8 @@ export default function SenmurvLaunch() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 px-4">
-          {/* ✅ Palantir-style headline */}
-          <h1 className="font-inter text-4xl sm:text-5xl lg:text-6xl font-light leading-snug tracking-tight">
+          {/* ✅ Slightly bigger Palantir-style headline */}
+          <h1 className="font-inter text-5xl sm:text-6xl lg:text-7xl font-light leading-snug tracking-tight">
             AI-Driven Automation <br /> for Every Operation
           </h1>
         </div>

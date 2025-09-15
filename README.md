@@ -1,0 +1,1 @@
+Senmurv site. Run: npm install && npm run dev. Deploy with Vercel.

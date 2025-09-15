@@ -15,7 +15,7 @@ export default function SenmurvLaunch() {
         <div className='absolute inset-0 bg-black/40' />
         <div className='relative z-10'>
           {/* ✅ Bigger headline */}
-          <h1 className="font-inter text-5xl sm:text-6xl font-semibold leading-snug">
+          <h1 className="font-inter text-7xl sm:text-8xl font-bold leading-tight">
             AI-Driven Automation <br /> for Every Operation
           </h1>
         </div>

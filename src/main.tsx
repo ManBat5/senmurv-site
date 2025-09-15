@@ -1,10 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import SenmurvLaunch from './SenmurvLaunch'
+import { createRoot } from 'react-dom/client'
 import './index.css'
+import SenmurvLaunch from './SenmurvLaunch'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const container = document.getElementById('root')!
+createRoot(container).render(
   <React.StrictMode>
     <SenmurvLaunch />
-  </React.StrictMode>,
+  </React.StrictMode>
 )

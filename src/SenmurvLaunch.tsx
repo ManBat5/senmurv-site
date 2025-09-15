@@ -14,8 +14,8 @@ export default function SenmurvLaunch() {
         />
         <div className='absolute inset-0 bg-black/40' />
         <div className='relative z-10'>
-          {/* ✅ Updated headline */}
-          <h1 className="font-inter text-3xl sm:text-4xl font-medium leading-tight">
+          {/* ✅ Bigger headline */}
+          <h1 className="font-inter text-5xl sm:text-6xl font-semibold leading-snug">
             AI-Driven Automation <br /> for Every Operation
           </h1>
         </div>
@@ -43,3 +43,4 @@ export default function SenmurvLaunch() {
     </div>
   )
 }
+

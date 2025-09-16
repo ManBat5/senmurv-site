@@ -1,13 +1,20 @@
+
 import React from 'react';
 
 export default function SenmurvLaunch() {
   return (
     <div className="min-h-screen w-full bg-black text-white font-inter">
-      {/* Top nav */}
+      {/* Top nav with logo */}
       <header className="fixed top-0 left-0 right-0 z-20 border-b border-white/10 bg-black/50 backdrop-blur-md">
         <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
-          <a href="#top" className="text-white/90 font-medium tracking-tight">
-            Senmurv
+          <a href="#top" className="flex items-center gap-3">
+            {/* Logo */}
+            <img
+              src="/senmurv.png"
+              alt="Senmurv"
+              className="h-8 w-8 rounded-md object-contain"
+            />
+            <span className="text-white/90 font-medium tracking-tight">Senmurv</span>
           </a>
           <nav className="hidden sm:flex items-center gap-6 text-white/70 text-sm">
             <a href="#about" className="hover:text-white">About</a>
@@ -42,23 +49,19 @@ export default function SenmurvLaunch() {
           loop
           playsInline
         />
-        {/* darken video */}
         <div className="absolute inset-0 bg-black/45" />
-        {/* content */}
         <div className="relative z-10 px-6 w-full">
           <div className="mx-auto max-w-5xl">
-            {/* Headline: crisp, authoritative, two lines */}
+            {/* Your preferred headline */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light leading-snug tracking-tight">
-              Sovereign AI Automation
+              AI-Driven Automation
               <br />
-              for Defense, Infrastructure & Security
+              for Every Operation
             </h1>
 
-            {/* Subtext: smaller/lighter so headline pops */}
+            {/* Optional subtext (light + small so headline pops) */}
             <p className="mt-4 text-base sm:text-lg text-white/75 max-w-2xl mx-auto">
-              We build end-to-end, on-prem intelligence: computer vision,
-              access control, and facility automation—integrated into a single
-              secure stack.
+              Secure, on-prem intelligence for real-world environments.
             </p>
 
             {/* CTAs */}
@@ -78,7 +81,6 @@ export default function SenmurvLaunch() {
             </div>
           </div>
         </div>
-        {/* subtle gradient at bottom for legibility */}
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/60 to-transparent" />
       </section>
 

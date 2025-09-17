@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        headline: ['"Black Ops One"', '"Share Tech Mono"', 'sans-serif'],
+        headline: ['"Share Tech Mono"', 'monospace'],
       },
     },
   },

@@ -8,7 +8,6 @@ export default function SenmurvLaunch() {
       <header className="fixed top-0 left-0 right-0 z-20 border-b border-white/10 bg-black/50 backdrop-blur-md">
         <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-3">
-            {/* Logo */}
             <img
               src="/senmurv.png"
               alt="Senmurv"
@@ -18,25 +17,14 @@ export default function SenmurvLaunch() {
           </a>
           <nav className="hidden sm:flex items-center gap-6 text-white/70 text-sm">
             <a href="#about" className="hover:text-white">About</a>
-            <a href="#services" className="hover:text-white">Services</a>
+            <a href="#vision" className="hover:text-white">Vision</a>
+            <a href="#research" className="hover:text-white">R&amp;D</a>
             <a href="#contact" className="hover:text-white">Contact</a>
-            <a
-              href="#contact"
-              className="ml-2 rounded-xl bg-white text-black px-4 py-1.5 font-medium hover:bg-white/90"
-            >
-              Contact Us
-            </a>
           </nav>
-          <a
-            href="#contact"
-            className="sm:hidden rounded-xl bg-white text-black px-3 py-1 text-sm font-medium"
-          >
-            Contact
-          </a>
         </div>
       </header>
 
-      {/* Hero */}
+      {/* Hero (headline only, per your request) */}
       <section
         id="top"
         className="relative h-screen flex items-center justify-center text-center overflow-hidden"
@@ -52,108 +40,120 @@ export default function SenmurvLaunch() {
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative z-10 px-6 w-full">
           <div className="mx-auto max-w-5xl">
-            {/* Your preferred headline */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light leading-snug tracking-tight">
               AI-Driven Automation
               <br />
               for Every Operation
             </h1>
-
-            {/* Optional subtext (light + small so headline pops) */}
-            <p className="mt-4 text-base sm:text-lg text-white/75 max-w-2xl mx-auto">
-              Secure, on-prem intelligence for real-world environments.
-            </p>
-
-            {/* CTAs */}
-            <div className="mt-8 flex items-center justify-center gap-3">
-              <a
-                href="#contact"
-                className="rounded-2xl bg-white text-black px-6 py-2.5 font-medium hover:bg-white/90"
-              >
-                Start a Pilot
-              </a>
-              <a
-                href="#services"
-                className="rounded-2xl border border-white/30 px-6 py-2.5 font-medium text-white/90 hover:border-white/60"
-              >
-                Learn More
-              </a>
-            </div>
           </div>
         </div>
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/60 to-transparent" />
       </section>
 
       {/* About */}
       <section id="about" className="py-20 sm:py-24">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="grid lg:grid-cols-2 gap-10 items-start">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-medium tracking-tight">
-                About Senmurv
-              </h2>
-              <p className="mt-4 text-white/75 leading-relaxed">
-                Senmurv builds sovereign AI systems for real-world operations.
-                Our stack spans perception (cameras, sensors), decision-making
-                (local AI), and action (access control, alarms, automation) to
-                secure facilities and optimize critical workflows.
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-center">
+            About Senmurv
+          </h2>
+          <p className="mt-5 text-white/75 leading-relaxed text-lg text-center">
+            Senmurv isn’t another automation vendor. It’s a mission to build{' '}
+            <span className="text-white/90">living intelligence</span> that
+            perceives, understands, acts, and evolves in the physical world —
+            moving beyond brittle rule-based systems. We are builders and
+            integrators who fuse hardware and intelligence into one fabric,
+            focused on outcomes, not dashboards. {/* vision & purpose */}
+          </p>
+
+          <div className="mt-10 grid md:grid-cols-3 gap-4">
+            <div className="rounded-2xl border border-white/10 p-5 bg-white/5">
+              <h3 className="text-lg font-medium">Decision-maker, not dashboard</h3>
+              <p className="mt-2 text-white/70 text-sm leading-relaxed">
+                Acts in the world, not just reports. A unified brain across
+                operations, safety, security, and environment.
               </p>
             </div>
-            <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
-              <h3 className="text-xl font-medium tracking-tight">Our vision</h3>
-              <p className="mt-3 text-white/75 leading-relaxed">
-                To give organizations a secure, on-prem intelligent core that
-                sees, understands, and acts—without relying on foreign clouds.
-                Built in Canada. Designed for defense, infrastructure, and
-                enterprise security.
+            <div className="rounded-2xl border border-white/10 p-5 bg-white/5">
+              <h3 className="text-lg font-medium">Self-supervising & accountable</h3>
+              <p className="mt-2 text-white/70 text-sm leading-relaxed">
+                Improves with guardrails, canaries, instant rollback, and proof
+                of gain — not promises.
               </p>
-              <p className="mt-4 text-white/60 text-sm">
-                — Alireza, Founder
+            </div>
+            <div className="rounded-2xl border border-white/10 p-5 bg-white/5">
+              <h3 className="text-lg font-medium">Sovereign & secure by design</h3>
+              <p className="mt-2 text-white/70 text-sm leading-relaxed">
+                Hardened, closed, and trusted. Knowledge can be shared as
+                portable “capsules” without exposing raw data.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services */}
-      <section id="services" className="py-20 sm:py-24 border-t border-white/10">
+      {/* Vision (from your document) */}
+      <section id="vision" className="py-20 sm:py-24 border-t border-white/10">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-center">
+            Vision & Purpose
+          </h2>
+          <div className="mt-6 space-y-5 text-white/75 leading-relaxed text-lg">
+            <p>
+              We refuse a future where critical systems remain brittle and
+              reactive. Our aim is real-world AGI — an audacious, living
+              intelligence that gets wiser with every cycle and proves its
+              improvements in operation.
+            </p>
+            <p>
+              The point is not more automation; it’s to transcend automation:
+              multi-agent intelligence that builds its own models, tests them in
+              reality, and distills proven skills into shareable knowledge
+              capsules.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Research & Development (no emojis; next-gen focus) */}
+      <section id="research" className="py-20 sm:py-24 border-t border-white/10">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-center">
-            What We Deliver
+            Research & Development
           </h2>
           <p className="mt-3 text-white/70 text-center max-w-2xl mx-auto">
-            Clear scope. Integrated stack. Real outcomes.
+            We’re in active R&amp;D — building the technology that doesn’t exist yet.
           </p>
 
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Card 1 */}
             <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
-              <div className="text-3xl">🛡️</div>
-              <h3 className="mt-3 text-xl font-medium">AI Security</h3>
+              <h3 className="text-xl font-medium">Causal Perception & World Models</h3>
               <p className="mt-2 text-white/70 text-sm leading-relaxed">
-                Facial recognition, license plate recognition, intrusion and
-                tamper detection, perimeter zones, and automated response.
+                Systems that don’t just watch but understand drift and causality, simulate
+                futures, and choose safe, effective actions.
               </p>
             </div>
-            {/* Card 2 */}
+
             <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
-              <div className="text-3xl">🏭</div>
-              <h3 className="mt-3 text-xl font-medium">Facility Automation</h3>
+              <h3 className="text-xl font-medium">Autonomous Orchestration</h3>
               <p className="mt-2 text-white/70 text-sm leading-relaxed">
-                Access control, alarms, lighting, and environmental controls—tied
-                to real-time events using local AI.
+                From doors to drones to power and light — orchestrating machines and
+                workflows with measurable outcomes.
               </p>
             </div>
-            {/* Card 3 */}
+
             <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
-              <div className="text-3xl">🤖</div>
-              <h3 className="mt-3 text-xl font-medium">Advanced Robotics</h3>
+              <h3 className="text-xl font-medium">Governed Self-Improvement</h3>
               <p className="mt-2 text-white/70 text-sm leading-relaxed">
-                Vision-guided automation and inspection. Prototype to pilot with
-                your existing infrastructure.
+                Guardrails, canary promotion, instant rollback, and knowledge capsules so
+                the system learns while staying under control.
               </p>
             </div>
           </div>
+
+          <p className="mt-10 text-white/60 text-sm text-center max-w-3xl mx-auto">
+            Initial proving grounds: operations (throughput & downtime stability), security
+            (pre-incident detection and proportionate deterrence), and safety (containment
+            before escalation).
+          </p>
         </div>
       </section>
 
@@ -166,31 +166,6 @@ export default function SenmurvLaunch() {
           <p className="mt-3 text-white/75">
             Email us at <a href="mailto:hello@senmurv.ai" className="underline underline-offset-4">hello@senmurv.ai</a>
           </p>
-
-          {/* simple non-functional form placeholder */}
-          <form className="mt-8 grid gap-3 text-left">
-            <input
-              className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-white/30"
-              placeholder="Your name"
-              type="text"
-            />
-            <input
-              className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-white/30"
-              placeholder="Your email"
-              type="email"
-            />
-            <textarea
-              className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 h-28 outline-none focus:border-white/30"
-              placeholder="Tell us briefly about your project..."
-            />
-            <button
-              type="button"
-              className="rounded-xl bg-white text-black px-5 py-3 font-medium hover:bg-white/90"
-              title="This is a placeholder—email us for now."
-            >
-              Send (placeholder)
-            </button>
-          </form>
         </div>
       </section>
 

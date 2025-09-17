@@ -7,9 +7,10 @@ export default function Research() {
       <Header />
       <main className="pt-24">
         <section className="mx-auto max-w-6xl px-6 py-12">
-          <h1 className="text-4xl sm:text-5xl font-medium tracking-tight text-center">
-            Research &amp; Development
-          </h1>
+          <h1 className="font-headline text-4xl sm:text-5xl uppercase tracking-[0.06em] text-center">
+  Research &amp; Development
+</h1>
+
           <p className="mt-4 text-white/75 text-center max-w-3xl mx-auto">
             We’re in active R&amp;D: building technology that doesn’t exist yet, and proving it step-by-step in reality.
           </p>

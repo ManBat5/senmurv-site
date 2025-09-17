@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 html,body,#root{height:100%;}
+/* Make hero text read through video blur */
+.hero-text {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}

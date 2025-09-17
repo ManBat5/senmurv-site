@@ -1,3 +1,4 @@
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
@@ -7,23 +8,24 @@ export default function Home() {
     <div className="min-h-screen w-full bg-black text-white font-inter">
       <Header />
 
-      {/* HERO (headline only) */}
+      {/* HERO */}
       <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
         <video className="absolute inset-0 h-full w-full object-cover" src="/hero.mp4" autoPlay muted loop playsInline />
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative z-10 px-6 w-full">
           <div className="mx-auto max-w-5xl">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light leading-snug tracking-tight">
-              No Automation. <br className="hidden sm:block" /> AGI in Operation.
+            <h1 className="hero-text font-headline text-5xl sm:text-6xl lg:text-7xl uppercase tracking-[0.06em]">
+              No Automation.
+              <br className="hidden sm:block" />
+              AGI in Operation.
             </h1>
           </div>
         </div>
       </section>
 
-      {/* Tiny teasers (keep home minimal) */}
+      {/* Teasers keep home minimal */}
       <main className="py-16 border-t border-white/10">
         <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-6">
-          {/* About teaser */}
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
             <h2 className="text-2xl font-medium tracking-tight">What Senmurv Is</h2>
             <p className="mt-2 text-white/75">
@@ -35,7 +37,6 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* R&D teaser */}
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
             <h2 className="text-2xl font-medium tracking-tight">What We’re Building</h2>
             <p className="mt-2 text-white/75">

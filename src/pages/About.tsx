@@ -7,7 +7,9 @@ export default function About() {
       <Header />
       <main className="pt-24">
         <section className="mx-auto max-w-5xl px-6 py-12">
-          <h1 className="text-4xl sm:text-5xl font-medium tracking-tight text-center">Vision &amp; Purpose</h1>
+          <h1 className="font-headline text-4xl sm:text-5xl uppercase tracking-[0.06em] text-center">
+  Vision &amp; Purpose
+</h1>
 
           <div className="prose prose-invert max-w-none">
             <p className="mt-6 text-white/80 text-lg leading-relaxed">

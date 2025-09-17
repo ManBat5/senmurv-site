@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Link, NavLink } from 'react-router-dom';
+export default function Header() {
+    return (_jsx("header", { className: "fixed top-0 left-0 right-0 z-20 border-b border-white/10 bg-black/50 backdrop-blur-md", children: _jsxs("div", { className: "mx-auto max-w-6xl px-4 h-14 flex items-center justify-between", children: [_jsxs(Link, { to: "/", className: "flex items-center gap-3", children: [_jsx("img", { src: "/senmurv.png", alt: "Senmurv", className: "h-8 w-8 rounded-md object-contain" }), _jsx("span", { className: "text-white/90 font-medium tracking-tight", children: "Senmurv" })] }), _jsxs("nav", { className: "hidden sm:flex items-center gap-6 text-white/70 text-sm", children: [_jsx(NavLink, { to: "/about", className: ({ isActive }) => isActive ? 'text-white' : 'hover:text-white', children: "About" }), _jsx(NavLink, { to: "/research", className: ({ isActive }) => isActive ? 'text-white' : 'hover:text-white', children: "R&D" }), _jsx("a", { href: "mailto:hello@senmurv.ai", className: "hover:text-white", children: "Contact" })] })] }) }));
+}

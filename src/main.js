@@ -1,7 +1,10 @@
-import { jsx as _jsx } from "react/jsx-runtime";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import SenmurvLaunch from './SenmurvLaunch';
+import Home from './pages/Home';
+import About from './pages/About';
+import Research from './pages/Research';
 const container = document.getElementById('root');
-createRoot(container).render(_jsx(React.StrictMode, { children: _jsx(SenmurvLaunch, {}) }));
+createRoot(container).render(_jsx(React.StrictMode, { children: _jsx(BrowserRouter, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/about", element: _jsx(About, {}) }), _jsx(Route, { path: "/research", element: _jsx(Research, {}) })] }) }) }));

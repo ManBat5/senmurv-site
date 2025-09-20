@@ -7,8 +7,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Research from './pages/Research';
 
-const container = document.getElementById('root')!;
-createRoot(container).render(
+const root = document.getElementById('root')!;
+createRoot(root).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>

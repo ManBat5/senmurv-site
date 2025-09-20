@@ -6,5 +6,5 @@ import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Research from './pages/Research';
-const container = document.getElementById('root');
-createRoot(container).render(_jsx(React.StrictMode, { children: _jsx(BrowserRouter, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/about", element: _jsx(About, {}) }), _jsx(Route, { path: "/research", element: _jsx(Research, {}) })] }) }) }));
+const root = document.getElementById('root');
+createRoot(root).render(_jsx(React.StrictMode, { children: _jsx(BrowserRouter, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/about", element: _jsx(About, {}) }), _jsx(Route, { path: "/research", element: _jsx(Research, {}) })] }) }) }));

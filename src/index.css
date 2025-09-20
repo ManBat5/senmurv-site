@@ -1,8 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html,body,#root{height:100%;}
-/* Make hero text read through video blur */
-.hero-text {
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+
+/* --- Pro polish pack --- */
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
+::selection { background: rgba(255,255,255,.2); }
+
+/* read through video */
+.hero-text { text-shadow: 0 2px 14px rgba(0,0,0,.55); }
+
+/* subtle card feel */
+.card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-radius: 1rem; }
+
+/* faint rule */
+.rule { border-top: 1px solid rgba(255,255,255,.12); }
+
+/* nav underline */
+.nav-link { position: relative; }
+.nav-link::after { content:""; position:absolute; left:0; bottom:-6px; width:0; height:2px; background:#fff; opacity:.9; transition:width .18s ease; }
+.nav-link:hover::after { width:100%; }
+
+/* reveal */
+@keyframes fadeUp { from {opacity:0; transform:translateY(8px)} to {opacity:1; transform:translateY(0)} }
+.reveal { animation: fadeUp .35s ease both; }

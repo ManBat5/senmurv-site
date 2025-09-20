@@ -2,36 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* --- Pro polish pack --- */
-html, body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
-}
-::selection { background: rgba(255,255,255,.2); }
+/* base polish */
+html, body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scroll-behavior: smooth; }
+::selection { background: rgba(0,0,0,.12); }
 
-/* read through video */
+/* hero text legibility */
 .hero-text { text-shadow: 0 3px 16px rgba(0,0,0,.55); }
 
-/* subtle card feel */
-.card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-radius: 1rem; }
+/* light sections like Palantir */
+.section-light { background:#f6f7f9; color:#0a0a0a; }
+.section-light .muted { color:rgba(0,0,0,.62); }
 
-/* faint rule */
-.rule { border-top: 1px solid rgba(255,255,255,.12); }
+/* pills row */
+.pill { background:#fff; border:1px solid #e5e7eb; border-radius:9999px; padding:.35rem .75rem; font-size:.8rem; color:#111827; }
+.pill:hover { border-color:#d1d5db; }
 
-/* nav underline */
-.nav-link { position: relative; }
-.nav-link::after { content:""; position:absolute; left:0; bottom:-6px; width:0; height:2px; background:#fff; opacity:.9; transition:width .18s ease; }
-.nav-link:hover::after { width:100%; }
+/* cards on light bg */
+.card-light { background:#fff; border:1px solid #e5e7eb; border-radius:1rem; overflow:hidden; }
+.card-light:hover { border-color:#d1d5db; }
 
-/* --- Animations --- */
+/* small underline hover for inline links on light bg */
+.link-ghost { border-bottom:1px solid transparent; }
+.link-ghost:hover { border-bottom-color: currentColor; }
+
+/* headline font helper (you already mapped this in tailwind) */
+.wordmark { font-family:"Share Tech Mono", monospace; letter-spacing:.02em; }
+
+/* animations */
 @keyframes fadeUp { from {opacity:0; transform:translateY(10px)} to {opacity:1; transform:translateY(0)} }
-.reveal { opacity: 0; animation: fadeUp .6s ease forwards; }
-
-/* hero stagger helpers (use inline style for timing) */
-.reveal-1 { animation-delay: .10s }
-.reveal-2 { animation-delay: .32s }
-.reveal-3 { animation-delay: .54s }
+.reveal { opacity:0; animation: fadeUp .6s ease forwards; }
+.reveal-1 { animation-delay:.10s } .reveal-2 { animation-delay:.32s } .reveal-3 { animation-delay:.54s }
 
 /* scroll cue bounce */
 @keyframes hop { 0%,100% { transform: translateY(0) } 50% { transform: translateY(6px) } }

@@ -24,6 +24,10 @@ html, body {
 .nav-link::after { content:""; position:absolute; left:0; bottom:-6px; width:0; height:2px; background:#fff; opacity:.9; transition:width .18s ease; }
 .nav-link:hover::after { width:100%; }
 
-/* reveal */
+/* reveal animation (supports inline animationDelay) */
 @keyframes fadeUp { from {opacity:0; transform:translateY(8px)} to {opacity:1; transform:translateY(0)} }
-.reveal { animation: fadeUp .35s ease both; }
+.reveal { opacity: 0; animation: fadeUp .6s ease forwards; }
+
+/* scroll cue bounce */
+@keyframes hop { 0%,100% { transform: translateY(0) } 50% { transform: translateY(6px) } }
+.scroll-indicator { animation: hop 1.4s infinite; }

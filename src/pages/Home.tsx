@@ -1,5 +1,3 @@
-
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
@@ -9,47 +7,49 @@ export default function Home() {
     <div className="min-h-screen w-full bg-black text-white font-inter">
       <Header />
 
-      {/* HERO */}
+      {/* HERO with animated text */}
       <section className="relative h-[88vh] sm:h-screen flex items-center justify-center text-center overflow-hidden">
         <video className="absolute inset-0 h-full w-full object-cover" src="/hero.mp4" autoPlay muted loop playsInline />
+        {/* gradient overlay for legibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/35 to-black/55" />
+
         <div className="relative z-10 px-6 w-full">
           <div className="mx-auto max-w-5xl">
-            <h1 className="hero-text font-headline text-5xl sm:text-6xl lg:text-7xl uppercase tracking-[0.06em]">
-              AGI-Powered Intelligence
+            <h1 className="hero-text font-headline text-5xl sm:text-6xl lg:text-7xl uppercase tracking-[0.06em] leading-tight">
+              <span className="reveal" style={{animationDelay: '0.10s'}}>AGI-Powered Intelligence</span>
               <br className="hidden sm:block" />
-              For Every Operations.
+              <span className="reveal" style={{animationDelay: '0.35s'}}>For Every Operations.</span>
             </h1>
+
+            {/* Get Started button */}
+            <div className="mt-8 reveal" style={{animationDelay: '0.60s'}}>
+              <a
+                href="#get-started"
+                className="inline-block rounded-2xl bg-white text-black px-6 py-2.5 font-medium hover:bg-white/90"
+              >
+                Get Started
+              </a>
+            </div>
           </div>
         </div>
+
+        {/* Scroll down cue */}
+        <a
+          href="#get-started"
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/80 hover:text-white"
+          aria-label="Scroll down"
+        >
+          <div className="scroll-indicator mx-auto h-10 w-10 rounded-full border border-white/40 flex items-center justify-center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M6 10l6 6 6-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
+          <div className="mt-2 text-xs tracking-wide">Scroll</div>
+        </a>
       </section>
 
-      {/* Value strips */}
-      <section className="rule py-14">
-        <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-3 gap-6">
-          <div className="card p-6 reveal">
-            <h3 className="text-lg font-medium">Decision-Maker, Not Dashboard</h3>
-            <p className="mt-2 text-white/75 text-sm leading-relaxed">
-              One brain across operations, safety, and security—built to act in the physical world.
-            </p>
-          </div>
-          <div className="card p-6 reveal">
-            <h3 className="text-lg font-medium">Governed Self-Improvement</h3>
-            <p className="mt-2 text-white/75 text-sm leading-relaxed">
-              Guardrails, canaries, instant rollback—prove the gain or revert. Accountability by design.
-            </p>
-          </div>
-          <div className="card p-6 reveal">
-            <h3 className="text-lg font-medium">Sovereign & Hardened</h3>
-            <p className="mt-2 text-white/75 text-sm leading-relaxed">
-              Closed-loop intelligence with portable knowledge capsules—share skills without sharing data.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Teasers */}
-      <section className="py-14">
+      {/* GET STARTED anchor section (teasers to deeper pages) */}
+      <section id="get-started" className="rule py-14">
         <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-6">
           <div className="card p-6">
             <h2 className="text-2xl font-medium tracking-tight">Vision &amp; Purpose</h2>

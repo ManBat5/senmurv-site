@@ -6,34 +6,36 @@ export default function About() {
       <h1 className="font-head text-4xl tracking-[.18em] mb-6">Vision & Purpose</h1>
 
       <p className="text-white/80 leading-relaxed">
-        Senmurv isn’t an automation vendor. It’s a refusal to accept brittle, reactive systems. We’re building
-        a living intelligence for the physical world — one that perceives, understands, acts, and grows wiser
-        through operation, proving improvements in reality rather than in slides. 
+        Senmurv is a commitment to <strong>intelligence over automation</strong>. We are building a living system for the
+        physical world that perceives, understands, acts, and <em>proves</em> improvement in operation—decision-maker, not dashboard.
       </p>
 
-      <p className="text-white/80 leading-relaxed mt-5">
-        We build for the arenas where fragility costs most: operations, security, and safety — catching issues
-        early, restoring throughput, and responding with proportionate deterrence. From these proving grounds,
-        the aim is a nervous system that strengthens sites, grids, and cities with every cycle.
+      <h2 className="mt-8 text-2xl font-semibold">Why we exist</h2>
+      <p className="text-white/80 leading-relaxed mt-2">
+        Rule-based automation can’t keep up with drift, complexity, and adversaries. Operators drown in alarms.
+        We’re replacing fragility with an on-prem brain that takes initiative, learns from outcomes, and respects constraints.
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6 mt-10">
-        <div className="rounded-2xl border border-white/15 p-5 bg-neutral-900">
-          <h2 className="text-xl font-semibold mb-2">What makes us different</h2>
-          <ul className="space-y-2 text-sm text-white/75">
-            <li>Decision-maker, not a dashboard — outcomes over instructions.</li>
-            <li>Self-supervised, guarded learning with canaries and instant rollback.</li>
-            <li>Closed, sovereign, hardened — trust and control are foundational.</li>
-          </ul>
-        </div>
-        <div className="rounded-2xl border border-white/15 p-5 bg-neutral-900">
-          <h2 className="text-xl font-semibold mb-2">Why now</h2>
-          <p className="text-sm text-white/75">
-            Edge compute, sensors, and modern learning architectures make real-time, closed-loop intelligence
-            practical — and the urgency is clear across infrastructure and industry.
-          </p>
-        </div>
-      </div>
+      <h2 className="mt-8 text-2xl font-semibold">What we build</h2>
+      <ul className="mt-2 list-disc pl-6 text-white/80 leading-relaxed">
+        <li><strong>Unified perception</strong>: cameras, sensors, and signals fused into a causal world model.</li>
+        <li><strong>Governed learning</strong>: guardrails → canaries → promotion; instant rollback on regression.</li>
+        <li><strong>Knowledge capsules</strong>: proven skills, signed and portable, so gains scale without moving raw data.</li>
+        <li><strong>Sovereign by design</strong>: on-prem, hardened, operators-in-the-loop where it matters.</li>
+      </ul>
+
+      <h2 className="mt-8 text-2xl font-semibold">Where it starts</h2>
+      <p className="text-white/80 leading-relaxed mt-2">
+        Operations stability, security intelligence, and safety & environment—domains where better decisions today
+        ripple across performance, risk, and resilience.
+      </p>
+
+      <h2 className="mt-8 text-2xl font-semibold">How we work</h2>
+      <ul className="mt-2 list-disc pl-6 text-white/80 leading-relaxed">
+        <li><strong>Outcomes over instructions</strong>: we measure cause and effect, not activity.</li>
+        <li><strong>Reality-first engineering</strong>: prototype fast on site; promote only with proof.</li>
+        <li><strong>Operator trust</strong>: clear controls, audit trails, and safe failure modes.</li>
+      </ul>
     </div>
   );
 }

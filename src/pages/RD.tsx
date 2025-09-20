@@ -6,35 +6,33 @@ export default function RD() {
       <h1 className="font-head text-4xl tracking-[.18em] mb-6">Research & Development</h1>
 
       <p className="text-white/80 leading-relaxed">
-        Our focus is a multi-agent AGI that builds a causal model of the world, forecasts likely futures,
-        selects safe actions, and measures impact — improving every day without waiting for humans to write
-        new rules. Learning is governed: improvements pass through guardrails and canaries, and regressions
-        roll back instantly.
+        We’re building a <strong>multi-agent AGI</strong> that maintains a causal model of the site, forecasts likely futures,
+        selects safe actions, and learns continuously under governance. The aim is everyday gains—less downtime, tighter security,
+        safer environments—proven in real operations.
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6 mt-10">
-        <div className="rounded-2xl border border-white/15 p-5 bg-neutral-900">
-          <h2 className="text-xl font-semibold mb-2">Starting domains</h2>
-          <ul className="text-sm text-white/75 space-y-1.5">
-            <li>Operations: recover throughput, prevent downtime, stabilize flows.</li>
-            <li>Security: detect pre-incident patterns; respond with proportionate, non-lethal deterrence.</li>
-            <li>Safety & environment: detect smoke/leaks early; act before harm spreads.</li>
-          </ul>
-        </div>
+      <h2 className="mt-8 text-2xl font-semibold">Workstreams</h2>
+      <ul className="mt-2 list-disc pl-6 text-white/80 leading-relaxed">
+        <li><strong>Perception & fusion</strong> — grounding across cameras, telemetry, and logs.</li>
+        <li><strong>World model</strong> — causal structure, drift detection, counterfactuals.</li>
+        <li><strong>Action selection</strong> — constrained policies, human-in-the-loop escalation.</li>
+        <li><strong>Governed learning</strong> — guardrails, canaries, audit, instant rollback.</li>
+        <li><strong>Knowledge capsules</strong> — signed skills that transfer without moving data.</li>
+      </ul>
 
-        <div className="rounded-2xl border border-white/15 p-5 bg-neutral-900">
-          <h2 className="text-xl font-semibold mb-2">Knowledge capsules</h2>
-          <p className="text-sm text-white/75">
-            Proven skills are distilled into signed capsules that can be shared safely across sites so gains in
-            one environment strengthen the rest.
-          </p>
-        </div>
-      </div>
+      <h2 className="mt-8 text-2xl font-semibold">Initial testbeds</h2>
+      <ul className="mt-2 list-disc pl-6 text-white/80 leading-relaxed">
+        <li><strong>Operations</strong>: recover throughput, reduce variance, stabilize flows.</li>
+        <li><strong>Security</strong>: pre-incident pattern detection and proportionate response.</li>
+        <li><strong>Safety</strong>: early detection of smoke, leaks, and unsafe states.</li>
+      </ul>
 
-      <p className="text-white/80 leading-relaxed mt-8">
-        Long-term, the goal is a distributed nervous system: wildfire sentinels catching micro-ignitions,
-        urban guardians rerouting flows before congestion or crisis, and infrastructure that improves with use.
-      </p>
+      <h2 className="mt-8 text-2xl font-semibold">Milestones</h2>
+      <ol className="mt-2 list-decimal pl-6 text-white/80 leading-relaxed">
+        <li><strong>P0</strong>: single-site loop with measurable gains and safe rollback.</li>
+        <li><strong>P1</strong>: capsule promotion across similar sites; operator tools for review.</li>
+        <li><strong>P2</strong>: cross-domain coordination (ops + security + safety) with shared context.</li>
+      </ol>
     </div>
   );
 }

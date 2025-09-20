@@ -1,3 +1,4 @@
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
@@ -7,22 +8,21 @@ export default function Home() {
     <div className="min-h-screen w-full bg-black text-white font-inter">
       <Header />
 
-      {/* HERO with animated text */}
+      {/* HERO with animated text + CTA + scroll cue */}
       <section className="relative h-[88vh] sm:h-screen flex items-center justify-center text-center overflow-hidden">
         <video className="absolute inset-0 h-full w-full object-cover" src="/hero.mp4" autoPlay muted loop playsInline />
-        {/* gradient overlay for legibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/35 to-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/35 to-black/58" />
 
         <div className="relative z-10 px-6 w-full">
           <div className="mx-auto max-w-5xl">
             <h1 className="hero-text font-headline text-5xl sm:text-6xl lg:text-7xl uppercase tracking-[0.06em] leading-tight">
-              <span className="reveal" style={{animationDelay: '0.10s'}}>AGI-Powered Intelligence</span>
+              <span className="reveal reveal-1">AGI-Powered Intelligence</span>
               <br className="hidden sm:block" />
-              <span className="reveal" style={{animationDelay: '0.35s'}}>For Every Operations.</span>
+              <span className="reveal reveal-2">For Every Operation</span>
             </h1>
 
             {/* Get Started button */}
-            <div className="mt-8 reveal" style={{animationDelay: '0.60s'}}>
+            <div className="mt-8 reveal reveal-3">
               <a
                 href="#get-started"
                 className="inline-block rounded-2xl bg-white text-black px-6 py-2.5 font-medium hover:bg-white/90"
@@ -48,7 +48,7 @@ export default function Home() {
         </a>
       </section>
 
-      {/* GET STARTED anchor section (teasers to deeper pages) */}
+      {/* GET STARTED target: teasers to deep pages */}
       <section id="get-started" className="rule py-14">
         <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-6">
           <div className="card p-6">

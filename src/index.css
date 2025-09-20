@@ -11,7 +11,7 @@ html, body {
 ::selection { background: rgba(255,255,255,.2); }
 
 /* read through video */
-.hero-text { text-shadow: 0 2px 14px rgba(0,0,0,.55); }
+.hero-text { text-shadow: 0 3px 16px rgba(0,0,0,.55); }
 
 /* subtle card feel */
 .card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-radius: 1rem; }
@@ -24,9 +24,14 @@ html, body {
 .nav-link::after { content:""; position:absolute; left:0; bottom:-6px; width:0; height:2px; background:#fff; opacity:.9; transition:width .18s ease; }
 .nav-link:hover::after { width:100%; }
 
-/* reveal animation (supports inline animationDelay) */
-@keyframes fadeUp { from {opacity:0; transform:translateY(8px)} to {opacity:1; transform:translateY(0)} }
+/* --- Animations --- */
+@keyframes fadeUp { from {opacity:0; transform:translateY(10px)} to {opacity:1; transform:translateY(0)} }
 .reveal { opacity: 0; animation: fadeUp .6s ease forwards; }
+
+/* hero stagger helpers (use inline style for timing) */
+.reveal-1 { animation-delay: .10s }
+.reveal-2 { animation-delay: .32s }
+.reveal-3 { animation-delay: .54s }
 
 /* scroll cue bounce */
 @keyframes hop { 0%,100% { transform: translateY(0) } 50% { transform: translateY(6px) } }

@@ -15,10 +15,10 @@ export default function Home() {
         <div className="relative z-10 px-6 w-full">
           <div className="mx-auto max-w-5xl">
             <h1 className="hero-text font-headline text-5xl sm:text-6xl lg:text-7xl uppercase tracking-[0.06em]">
-              No Automation.
-              <br className="hidden sm:block" />
-              AGI in Operation.
-            </h1>
+  AGI-Powered Intelligence
+  <br className="hidden sm:block" />
+  For Every Operation.
+</h1>
           </div>
         </div>
       </section>
